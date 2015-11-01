@@ -14,9 +14,9 @@ block += '| Artist        | Shop          | Instagram                           
 block += '| ------------- |:-------------:| :-----------------------------------------------------:|' + '\n';
 
 artists.map(function(artist){
-  block += '| ' + artist.name + ' |' + '\n';
-  block += '| ' + artist.shop + ' |' + '\n';
-  block += '| [@' + artist.instagram + '](' + artist.instagram_url + ') |' + '\n';
+  block += '| ' + artist.name + ' | ';
+  block +=  artist.shop + ' | ';
+  block += '[@' + artist.instagram + '](' + artist.instagram_url + ') |' + '\n';
 });
 write('./README.md', block);
 console.log('New README created');
